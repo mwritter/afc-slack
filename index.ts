@@ -11,7 +11,7 @@ const app = new App({
       method: ["GET"],
       handler: async (req, res) => {
         await fetch(
-          "https://hooks.slack.com/services/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",
+          process.env.SLACK_WEBHOOK_URL,
           {
             method: "POST",
             headers: {
